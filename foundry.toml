@@ -1,0 +1,19 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+
+fs_permissions = [
+    { access = "read-write", path = "script/target/" },
+    { access = "read-write", path = "./broadcast" },
+]
+
+remappings = [
+    "@openzeppelin/cointracts=lib/openzeppelin-contracts/contracts/",
+    "forge-std=lib/forge-std/src/",
+]
+
+[[profile.default.build]]
+
+
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
